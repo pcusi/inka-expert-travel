@@ -1,0 +1,123 @@
+@import '_variables.scss';
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('../assets/fonts/Playfair.ttf');
+}
+
+@font-face {
+    font-family: 'Worksans';
+    src: url('../assets/fonts/Worksans.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Worksans';
+    src: url('../assets/fonts/Worksans-Bold.ttf');
+    font-weight: bold;
+}
+
+.iet__container__fluid {
+    padding: 12px 60px 0 60px;
+}
+
+.iet__container {
+    padding: 28px 60px;
+}
+
+.iet__jumbotron {
+    background: $bg-1;
+    .iet__header {
+        width: auto;
+        height: 135px;
+        background: red;
+    }
+}
+
+.iet__rating {
+    background: #F0F1F1;
+    .iet__list {
+        .nav-item {
+            margin: 0 20px;
+        }
+        .nav-link {
+            color: $gray-1;
+            font-size: 20px;
+        }
+    }
+    .iet__rating__point {
+        .iet__rating__list {
+            .nav-link {
+                color: $black-1;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.iet__our__story {
+    .iet__our__title {
+        font-weight: bold;
+        font-family: 'Worksans';
+    }
+    .iet__our__subtitle {
+        font-family: 'Worksans';
+        font-weight: 400;
+        font-size: 20px;
+        color: $black-1;
+    }
+}
+
+.iet__travel__video {
+    background-image: url('../assets/img/inka_expert_travel_video.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.iet__first__phrase {
+    background: #F0F1F1;
+    .iet__phrase__title {
+        font-family: 500;
+        font-size: 32px;
+        font-family: 'Worksans';
+        color: $black-1;
+    }
+}
+
+/* Tags and class independents */
+.iet__title {
+    font-family: 'Pairflay';
+    font-weight: 900;
+    font-size: 60px;
+    color: $black-1;
+}
+.iet__subtitle {
+    font-family: 'Worksans';
+    color: $gray-1;
+    font-size: 24px;
+    font-weight: 400;
+}
+.iet__first__link {
+    border-radius: 10px;
+    border: 1px solid $black-1;
+}
+.iet__separator {
+    width: 70px;
+    height: 10px;
+    background: $black-1;
+}
+.iet__jumbo__separator {
+    &::before {
+        display: block;
+        content: "\00a0";
+        background: #3D9044;
+        position: absolute;
+        width: 15px;
+        height: 120px;
+    }
+}
+.iet__impress {
+    font-weight: bolder;
+    color: $black-1;
+}
