@@ -64,6 +64,7 @@
         font-family: 'Worksans';
         font-weight: 400;
         font-size: 20px;
+        line-height: 1;
         color: $black-1;
     }
 }
@@ -77,12 +78,10 @@
 
 .iet__first__phrase {
     background: #F0F1F1;
-    .iet__phrase__title {
-        font-family: 500;
-        font-size: 32px;
-        font-family: 'Worksans';
-        color: $black-1;
-    }
+}
+
+.iet__makeus__unique {
+    background: #F0F1F1;  
 }
 
 /* Tags and class independents */
@@ -91,12 +90,24 @@
     font-weight: 900;
     font-size: 60px;
     color: $black-1;
+    line-height: 1;
 }
 .iet__subtitle {
     font-family: 'Worksans';
     color: $gray-1;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+}
+.iet__specialist__title {
+    font-weight: bolder;
+    font-family: 'Worksans';
+    color: $black-1;
+}
+.iet__specialist__subtitle {
+    font-weight: bold;
+    font-family: 'Worksans';
+    color: $green-1;
 }
 .iet__first__link {
     border-radius: 10px;
@@ -111,11 +122,17 @@
     &::before {
         display: block;
         content: "\00a0";
-        background: #3D9044;
+        background: $green-1;
         position: absolute;
         width: 15px;
         height: 120px;
     }
+}
+.iet__phrase__title {
+    font-family: 'Worksans';
+    font-family: 700;
+    font-size: 32px;
+    color: $black-1;
 }
 .iet__impress {
     font-weight: bolder;
