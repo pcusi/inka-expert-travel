@@ -144,7 +144,7 @@ function appendExperienceFeaturesDivColumns() {
                     <div class="${x.selected == true ? 'iet__about__separator__three__active' : 'iet__about__separator__three__deactive'}"></div>
                     </div>
                     <div class="col-lg-10">
-                        <h5 class="${x.selected == true ? 'about__title__active' : 'about__title__deactive'} px-4 px-lg-0">${x.description+'a'}<h5>
+                        <h5 class="${x.selected == true ? 'about__title__active' : 'about__title__deactive'} px-4 px-lg-0">${x.description}<h5>
                     </div>
                 </div>
             </div>
