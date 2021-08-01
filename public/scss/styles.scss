@@ -48,8 +48,26 @@
     background: linear-gradient(180deg, #BEBCB0 0%, #E6E2D5 40.1%);
     .iet__header {
         width: auto;
-        height: 135px;
-        background: red;
+        .iet__pricing {
+            background: $green-1;
+            color: #fff;
+            font-weight: bolder;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+        .fa {
+            color: $black-1;
+            font-size: 24px;
+        }
+        .nav-item {
+            margin: 0 16px;
+            .nav-link {
+                color: $black-1;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+        }
     }
 }
 
@@ -269,35 +287,57 @@
     .iet__hr {
         background: #85878A;
     }
+    .iet__footer__section {
+        padding: 8px 40px;
+    }
     .iet__footer__col {
         padding-right: 60px;
         border-right: 2px solid #343030;
+        height: 165px;
         .iet__footer__title {
             color: $yellow-1;
-            font-family: 'Worksans';
-            font-weight: 500;
-            font-size: 16px;
+            font-weight: bolder;
+            font-size: 20px;
             line-height: 1;
         }
         .nav-link {
             color: $gray-3;
-            font-family: 'Worksans';
             font-size: 16px;
             font-weight: 400;
         }
         .iet__footer__link {
             color: #fff;
-            font-family: 'Worksans';
             font-weight: bold;
-            font-size: 14px;
-            line-height: 1;  
+            font-size: 16px;
         }
+    }
+    .iet__footer__subtitle {
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1;
+    }
+    .iet__footer__separator {
+        color: #fff;
+        font-size: 12px;
+        line-height: 1;
     }
     .iet__footer__title__two {
         color: #fff;
-        font-family: 'Worksans';
         font-weight: bolder;
+        font-size: 20px;
+        line-height: 1;
+    }
+    .iet__copyright {
+        color: $gray-3;
         font-size: 16px;
+        line-height: 1;
+    }
+    .iet__footer__featured {
+        color: $gray-3;
+        font-weight: 700;
+        font-size: 16px;
+        font-family: 'Playfair';
         line-height: 1;
     }
 }
@@ -359,6 +399,30 @@
         position: absolute;
         width: 15px;
         height: 25%;
+    }
+}
+@media (max-width: 368px) {
+    .iet__jumbo__separator {
+        &::before {
+            height: 55%;
+        }
+    }
+    .iet__jumbo__separator__two {
+        &::before {
+            height: 68%;
+        }
+    }
+}
+@media (min-width: 369px) and (max-width: 569px) {
+    .iet__jumbo__separator {
+        &::before {
+            height: 40%;
+        }
+    }
+    .iet__jumbo__separator__two {
+        &::before {
+            height: 54%;
+        }
     }
 }
 .iet__phrase__title {
