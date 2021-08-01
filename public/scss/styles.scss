@@ -3,12 +3,31 @@
 @font-face {
     font-family: 'Playfair';
     src: url('../assets/fonts/Playfair.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('../assets/fonts/Playfair-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('../assets/fonts/Playfair-Bold.ttf');
+    font-weight: bold;
 }
 
 @font-face {
     font-family: 'Worksans';
     src: url('../assets/fonts/Worksans.ttf');
     font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Worksans';
+    src: url('../assets/fonts/Worksans-Medium.ttf');
+    font-weight: 500;
 }
 
 @font-face {
@@ -26,7 +45,7 @@
 }
 
 .iet__jumbotron {
-    background: $bg-1;
+    background: linear-gradient(180deg, #BEBCB0 0%, #E6E2D5 40.1%);
     .iet__header {
         width: auto;
         height: 135px;
@@ -42,14 +61,19 @@
         }
         .nav-link {
             color: $gray-1;
-            font-size: 20px;
+            font-size: 16px;
         }
     }
     .iet__rating__point {
         .iet__rating__list {
             .nav-link {
+                padding: 4px;
                 color: $black-1;
-                font-size: 20px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .iet__rating__nav__active  {
+                font-weight: bolder;
             }
         }
     }
@@ -59,6 +83,8 @@
     .iet__our__title {
         font-weight: bold;
         font-family: 'Worksans';
+        font-weight: 900;
+        color: $black-1;
     }
     .iet__our__subtitle {
         font-family: 'Worksans';
@@ -82,6 +108,198 @@
 
 .iet__makeus__unique {
     background: #F0F1F1;  
+}
+
+.iet__about__experience {
+    .iet__about__separator__three__active {
+        &::before {
+            display: block;
+            content: "\00a0";
+            background: $green-1;
+            position: absolute;
+            width: 15px;
+            height: 5%;
+        }
+    }
+    .iet__about__separator__three__deactive {
+        &::before {
+            display: block;
+            content: "\00a0";
+            background: $gray-2;
+            position: absolute;
+            width: 15px;
+            height: 5%;
+        }
+    }
+    .about__title__active {
+        font-family: 'Worksans';
+        color: $green-1;
+        font-weight: bolder;
+    }
+    .about__title__deactive {
+        font-family: 'Worksans';
+        color: $gray-2;
+        font-weight: bolder;
+    }
+}
+
+.iet__our__team {
+    background: #F0F1F1;
+    .team__member {
+        font-family: 'Playfair';
+        font-weight: bolder;
+        line-height: 1;
+        font-size: 28px;
+    }
+    .team__img {
+        border-radius: 16px;
+    }
+    .team__role {
+        font-family: 'Worksans';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1;
+        color: $black-1;
+    }
+    .team__learn__more {
+        font-family: 'Worksans';
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 1;
+        color: $green-2;
+    }
+}
+
+.iet__book {
+    background: $bg-1;
+    .iet__book__title {
+        font-family: 'Playfair';
+        font-weight: bolder;
+    }
+    .iet__book__item {
+        background: #fff;
+        border-radius: 8px;
+        margin: 3px;
+        width: 225px;
+        height: 80px;
+        .iet__book__item__title {
+            font-family: 'Worksans';
+            line-height: 1;
+            font-size: 20px;
+            font-weight: 500;
+            color: $black-1;
+        }
+    }
+    .iet__book__item__two {
+        background: #fff;
+        border-radius: 8px;
+        margin: 3px;
+        width: 81.4px;
+        height: 80px;
+        .iet__book__item__two__title {
+            font-family: 'Worksans';
+            line-height: 1;
+            font-size: 20px;
+            font-weight: 500;
+            color: $black-1;
+        }
+    }
+    .iet__book__item__three {
+        background: #fff;
+        border-radius: 8px;
+        margin: 3px;
+        width: 168.8px;
+        height: 80px;
+        .iet__book__item__three__title {
+            font-family: 'Worksans';
+            line-height: 1;
+            font-size: 16px;
+            font-weight: 500;
+            color: $black-1;
+        }
+    }
+    .iet__book__item__four {
+        background: #fff;
+        border-radius: 8px;
+        margin: 3px;
+        width: 109.5px;
+        height: 80px;
+        .iet__book__item__four__title {
+            font-family: 'Worksans';
+            line-height: 1;
+            font-size: 20px;
+            font-weight: 500;
+            color: $black-1;
+        }
+    }
+    .iet__book__item__five {
+        background: #fff;
+        border-radius: 8px;
+        margin: 3px;
+        width: 684px;
+        height: 80px;
+        .iet__book__item__five__title {
+            font-family: 'Worksans';
+            line-height: 1;
+            font-size: 20px;
+            font-weight: 500;
+            color: $gray-3;
+        }
+    }
+    .iet__btn__outline {
+        background: transparent;
+        border: 1px solid $black-1;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Worksans';
+        &:hover {
+            background: $black-1;
+            color: #fff;  
+        }
+    }
+    .iet__sell__title {
+        font-weight: 500;
+        font-family: 'Worksans';
+        line-height: 1; 
+    }
+}
+
+.iet__footer {
+    background: $bg-3;
+    .iet__hr {
+        background: #85878A;
+    }
+    .iet__footer__col {
+        padding-right: 60px;
+        border-right: 2px solid #343030;
+        .iet__footer__title {
+            color: $yellow-1;
+            font-family: 'Worksans';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1;
+        }
+        .nav-link {
+            color: $gray-3;
+            font-family: 'Worksans';
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .iet__footer__link {
+            color: #fff;
+            font-family: 'Worksans';
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1;  
+        }
+    }
+    .iet__footer__title__two {
+        color: #fff;
+        font-family: 'Worksans';
+        font-weight: bolder;
+        font-size: 16px;
+        line-height: 1;
+    }
 }
 
 /* Tags and class independents */
@@ -118,6 +336,11 @@
     height: 10px;
     background: $black-1;
 }
+.iet__separator__two {
+    width: 20px;
+    height: 10px;
+    background: $black-1;
+}
 .iet__jumbo__separator {
     &::before {
         display: block;
@@ -125,16 +348,31 @@
         background: $green-1;
         position: absolute;
         width: 15px;
-        height: 120px;
+        height: 15%;
+    }
+}
+.iet__jumbo__separator__two {
+    &::before {
+        display: block;
+        content: "\00a0";
+        background: $green-1;
+        position: absolute;
+        width: 15px;
+        height: 25%;
     }
 }
 .iet__phrase__title {
     font-family: 'Worksans';
-    font-family: 700;
+    font-family: 500;
     font-size: 32px;
     color: $black-1;
 }
 .iet__impress {
     font-weight: bolder;
     color: $black-1;
+}
+.fa{
+    color: $green-3;
+    margin: 0 2px;
+    font-size: 20px;
 }
