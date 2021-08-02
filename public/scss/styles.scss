@@ -194,6 +194,19 @@
 
 .iet__book {
     background: $bg-1;
+    position: relative;
+    .iet__book__img {
+        position: absolute;
+        right: 0;
+        width: 600px;
+        bottom: 0;
+        opacity: 0.7;
+        z-index: 1;
+    }
+    .iet__book__confidence {
+        position: relative;
+        z-index: 5;
+    }
     .iet__book__title {
         font-family: 'Playfair';
         font-weight: bolder;
@@ -339,7 +352,7 @@
     }
     .iet__footer__featured {
         color: $gray-3;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 16px;
         font-family: 'Playfair';
         line-height: 1;
