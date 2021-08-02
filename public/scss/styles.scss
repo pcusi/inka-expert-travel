@@ -79,7 +79,7 @@
         }
         .nav-link {
             color: $gray-1;
-            font-size: 16px;
+            font-size: 14px;
         }
     }
     .iet__rating__point {
@@ -87,11 +87,15 @@
             .nav-link {
                 padding: 4px;
                 color: $black-1;
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 500;
             }
             .iet__rating__nav__active  {
                 font-weight: bolder;
+            }
+            .iet__rating__nav  {
+                font-weight: 700;
+                font-size: 16px;
             }
         }
     }

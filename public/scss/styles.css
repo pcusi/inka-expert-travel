@@ -85,18 +85,23 @@
 
 .iet__rating .iet__list .nav-link {
   color: #393939;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .iet__rating .iet__rating__point .iet__rating__list .nav-link {
   padding: 4px;
   color: #171717;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 
 .iet__rating .iet__rating__point .iet__rating__list .iet__rating__nav__active {
   font-weight: bolder;
+}
+
+.iet__rating .iet__rating__point .iet__rating__list .iet__rating__nav {
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .iet__our__story .iet__our__title {
